@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Tarjeta de Presentación
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="index.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- LOADING -->
+
+    <div
+        id="loading"
+        class="loading">
+
+        <div class="loader"></div>
+
+        <p>
+            Cargando tarjeta...
+        </p>
+
+    </div>
+
+    <!-- ERROR -->
+
+    <div
+        id="errorBox"
+        class="error-box oculto">
+
+        <i class="fa-solid fa-circle-exclamation"></i>
+
+        <h2>
+            Tarjeta no encontrada
+        </h2>
+
+        <p id="errorTexto">
+            No se encontró información para este código QR.
+        </p>
+
+    </div>
+
+    <!-- MODAL REGISTRO VISITANTE -->
+
+    <section
+        id="modalRegistro"
+        class="modal-registro oculto">
+
+        <div class="modal-card">
+
+            <div class="modal-icon">
+
+                <i class="fa-solid fa-user-check"></i>
+
+            </div>
+
+            <h2>
+                Antes de continuar
+            </h2>
+
+            <p>
+                Registre sus datos para visualizar la tarjeta digital.
+            </p>
+
+            <div class="grupo-modal">
+
+                <label>
+                    Nombre completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nombreVisitante"
+                    placeholder="Ingrese su nombre completo"
+                    autocomplete="name">
+
+            </div>
+
+            <div class="grupo-modal">
+
+                <label>
+                    Número de teléfono
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefonoVisitante"
+                    placeholder="Ingrese su número de teléfono"
+                    autocomplete="tel">
+
+            </div>
+
+            <button
+                id="btnRegistrarVisitante"
+                class="btn-modal"
+                type="button">
+
+                Continuar
+
+            </button>
+
+            <span
+                id="mensajeModal"
+                class="mensaje-modal">
+
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- TARJETA -->
+
+    <main
+        id="tarjeta"
+        class="tarjeta oculto">
+
+        <section class="hero">
+
+            <h1 id="nombre">
+                Nombre de la persona
+            </h1>
+
+            <p id="cargo">
+                Cargo de la persona
+            </p>
+
+        </section>
+
+        <!-- VIDEO -->
+
+        <section
+            id="videoSection"
+            class="video-section oculto">
+
+            <div
+                id="videoContainer"
+                class="video-container">
+
+            </div>
+
+        </section>
+
+        <!-- BOTONES -->
+
+        <section class="acciones">
+
+            <button
+                id="btnGuardarContacto"
+                class="btn btn-primary"
+                type="button">
+
+                <i class="fa-solid fa-phone"></i>
+
+                Guardar contacto
+
+            </button>
+
+            <button
+                id="btnWeb"
+                class="btn btn-secondary"
+                type="button">
+
+                <i class="fa-solid fa-globe"></i>
+
+                Visitar sitio web
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- WHATSAPP FLOTANTE -->
+
+    <button
+        id="btnWhatsApp"
+        class="whatsapp oculto"
+        type="button">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </button>
+
+    <script
+        type="module"
+        src="index.js">
+    </script>
+
+</body>
+
+</html>
